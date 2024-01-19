@@ -1,0 +1,90 @@
+{
+  "name": "Settings Template",
+  "author": "Aidanamite",
+  "description": "Just a template/demonstration of how to use the Extra Settings API mod",
+  "version": "1.6.0",
+  "license": "GNU AGPLv3",
+  "icon": "icon.png",
+  "banner": "banner.jpg",
+  "gameVersion": "1.0",
+  "requiredByAllPlayers": false,
+  "updateUrl": "https://www.raftmodding.com/api/v1/mods/settings-template/version.txt",
+  "isModPermanent": false,
+  "excludedFiles": [ ],
+  "modSettings": [
+    {
+      "type": "checkbox",
+      "name": "checkBoxDisplay",
+      "text": "Checkbox Display",
+      "access": "both",
+      "default": true
+    },
+    {
+      "type": "combobox",
+      "name": "comboBoxDisplay",
+      "text": "Combobox Display",
+      "access": "world",
+      "default": "World",
+      "values": [ "Hello", "World", "I'm", "A", "Computer" ]
+    },
+    {
+      "type": "slider",
+      "name": "sliderDisplay",
+      "text": "Slider Display",
+      "access": "mainmenu",
+      "default": 0.75,
+      "range": {
+        "type": "percent",
+        "min": 0.5,
+        "max": 1.75,
+        "decimals": 1
+      }
+    },
+    {
+      "type": "keybind",
+      "name": "keybindDisplay",
+      "text": "Keybind Display",
+      "access": "globalworld",
+      "mainDefault": "M",
+      "altDefault": "n"
+    },
+    {
+      "type": "section",
+      "name": "mySection",
+      "text": "Expandable Section"
+    },
+    {
+      "type": "text",
+      "name": "textDisplay",
+      "text": "Text Display",
+      "section": "mySection"
+    },
+    {
+      "type": "button",
+      "name": "buttonDisplay",
+      "text": "Button Display"
+    },
+    {
+      "type": "input",
+      "name": "inputDisplay",
+      "text": "Input Display",
+      "default": "some Text",
+      "max": 20,
+      "mode": "Standard",
+      "access": "globalcustom"
+    },
+    {
+      "type": "data",
+      "name": "dataStore",
+      "access": "both",
+      "default": {
+        "anItem": "Anything you want"
+      }
+    },
+    {
+      "type": "multibutton",
+      "name": "multibuttonDisplay",
+      "buttons": [ "Button 1", "Button 2", "Button 3" ]
+    }
+  ]
+}
